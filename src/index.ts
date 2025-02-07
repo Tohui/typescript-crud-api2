@@ -1,5 +1,7 @@
-let mensajeConsola = (mensaje:string) => {
-    console.log(mensaje)
-}
+import app from "./app"
 
-mensajeConsola('Hola mundo desde typescript')
+const PORT:number = 3000
+
+app.listen (PORT, () =>{
+    console.log(`Servidor corriendo en el puerto ${PORT}`)
+})
