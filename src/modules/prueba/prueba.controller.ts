@@ -18,4 +18,9 @@ export class pruebaController {
         const numero = parseInt(req.params.numero, 10);
         res.status(201).json(await this.pruebaservice.helloworld(numero));
     };   
+
+    findByEmail = async (req: Request, res: Response) => {
+        messageModule('Get by id');
+        res.status(201).json(await this.pruebaservice.getItemById(req.params.numero));
+    };   
 }
