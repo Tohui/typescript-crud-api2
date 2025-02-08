@@ -7,7 +7,7 @@ const router = Router();
 
 
 router.post("/prueba", Pruebacontroller2.helloworld);
-router.get("/pruebas/:numero", Pruebacontroller2.api)
+router.get("/prueba/:numero", Pruebacontroller2.api)
 
 
 
